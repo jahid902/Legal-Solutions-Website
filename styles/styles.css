@@ -67,6 +67,15 @@
 .faq-img{
     width: fit-content;
 }
+.bg-black{
+    height: 50vh;
+}
+
+.last-img{
+    width: 40%;
+    height: 20%;
+}
+
 
 @media (max-width: 600px) {
     .faq-img{
@@ -87,5 +96,13 @@ justify-content: center;    }
 }
 .carousel-text{
     margin-top: 25px !important;
+}
+.bg-black{
+    height: 100%;
+    margin-bottom: 30px;
+}
+.last-img{
+    width: 100px;
+    height: 50px;
 }
   }
