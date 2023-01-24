@@ -45,7 +45,25 @@
                           </li>                                                                 
                         </ul>
                         <form class="d-flex" role="search">                     
-                          <button class="btn btn-primary px-3 py-2 fw-bold" type="submit">Free Consultation</button>
+                          <button class="btn btn-primary px-3 py-2 fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">Free Consultation</button>
+                          <!-- Modal -->
+                          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">Book now</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  This is a page where u can apply for our service. Here u can write your description as well as much more. 
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <button type="button" class="btn btn-primary">Book now</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                         </form>
                       </div>
                     </div>
@@ -141,7 +159,7 @@
             Over the years we got so many positive reviews of our customers. Our customers are so contempt with our service. Here are some of the reviews below.
           </p>
         </div>
-        <div class="mb-2">
+        <div>
           <div id="carouselExampleIndicators" class="carousel slide">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -153,7 +171,7 @@
                 <div class="d-flex justify-content-center align-items-center text-center">
                   <div class="carousel-text">
                     <img class="text-img" src="images/testimonial-1.jpg" alt="">
-                    <h3 class="text-white display-3">Awal Hussain</h3>
+                    <h3 class="text-white fw-bold display-3">Awal Hussain</h3>
                     <p class="text-white display-4">Banker</p>                 
                     <p class="text-white">I found this company very efficient. I got the desiered result hiring this company. <br> It provided me with less turmoil and much easier case solving.</p>
                   </div>
@@ -164,7 +182,7 @@
                 <div class="d-flex justify-content-center align-items-center text-center">
                   <div class="carousel-text">
                     <img class="text-img-2" src="images/testimonial-4.jpg" alt="">
-                    <h3 class="text-white display-3">Ifran Ahmed</h3>
+                    <h3 class="text-white fw-bold display-3">Ifran Ahmed</h3>
                     <p class="text-white display-4">Doctor</p>                 
                     <p class="text-white">This company really helped me to solve my case pretty well. I am very satisfied with their service. <br> Hope we work again on something else.</p>
                   </div>
@@ -175,7 +193,7 @@
                 <div class="d-flex justify-content-center align-items-center text-center">
                   <div class="carousel-text">
                     <img class="text-img-3" src="images/testimonial-5.jpg" alt="">
-                    <h3 class="text-white display-3">Hussain AHmed</h3>
+                    <h3 class="text-white fw-bold display-3">Hussain AHmed</h3>
                     <p class="text-white display-4">Businessman</p>                 
                     <p class="text-white">I had a huge problem in paying tax. This company helped me in my tax issue. Really happy with their service.</p>
                   </div>
@@ -197,12 +215,81 @@
       </section>
       <!-- End of 3rd section -->
 
-
+      <section class="container mb-2">
+        <div class="text-center">
+          <h2 class="display-4">Frequently Asked Questions</h2>
+          <p>Here are some the questions which are asked by our customers more often.</p>
+        </div>
+        <div>
+          <div class="container text-center">
+            <div class="row row-cols-sm-1 row-cols-md-2">
+              <div class="col order-2 order-md-1">
+                <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-light-subtle text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Accordion Item #1
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show bg-light-subtle" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-light-subtle text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Accordion Item #2
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse bg-light-subtle" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-light-subtle text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse bg-light-subtle" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-light-subtle text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                      Accordion Item #3
+                    </button>
+                  </h2>
+                  <div id="collapsefour" class="accordion-collapse collapse bg-light-subtle" aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div class="col order-1 order-md-2">
+                <img class="h-75 faq-img" src="images/faq.png" alt="">
+              </div>             
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+    <!-- end of main section -->
    
    
    
-    <footer>
+    <footer class="bg-primary h-25">
+      <p>color</p>
+
 
     </footer>
     
